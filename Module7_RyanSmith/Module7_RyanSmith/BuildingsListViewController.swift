@@ -11,7 +11,7 @@ final class BuildingsListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
-    // “Model owned by controller” for this small assignment
+    
     private var buildings = BuildingData.buildings
     private var selectedBuilding: Building?
 
@@ -19,14 +19,14 @@ final class BuildingsListViewController: UIViewController {
         super.viewDidLoad()
         title = "Auburn Buildings"
 
-        // High contrast (optional)
+        
         view.backgroundColor = .black
         tableView.backgroundColor = .black
 
         tableView.dataSource = self
         tableView.delegate = self
 
-        // No storyboard prototype cells required:
+        
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
 
